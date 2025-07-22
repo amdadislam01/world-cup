@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>world-cup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .content-container {
+            width: 80%;
+            max-width: 1320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (max-width: 1024px) {
+            .content-container {
+                width: 90%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content-container {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
-<body>
-    
+<body class=" font-sans">
+    <!-- Header/Banner Section  -->
+    <div class="content-container">
+        <header class="bg-black text-white rounded-lg mt-10">
+            <div class="max-w-7xl mx-auto px-4 py-12 md:flex items-center">
+                <!-- Text Content -->
+                <div class="md:w-1/2 md:pr-8">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">The Greatest show on the earth</h1>
+                    <p class="text-lg md:text-xl mb-8">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <button
+                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition duration-300">
+                        Watch Live
+                    </button>
+                </div>
+
+                <!-- Image Side -->
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="assets/Banner Image.png" alt="Football match" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </header>
 </body>
 </html>
